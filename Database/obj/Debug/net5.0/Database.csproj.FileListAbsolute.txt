@@ -1,0 +1,17 @@
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Database.deps.json
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Database.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\ref\Database.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Database.pdb
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Domain.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Domain.pdb
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.csproj.AssemblyReference.cache
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.AssemblyInfoInputs.cache
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.AssemblyInfo.cs
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\ref\Database.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.pdb
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Database.runtimeconfig.json
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Database.runtimeconfig.dev.json
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.genruntimeconfig.cache

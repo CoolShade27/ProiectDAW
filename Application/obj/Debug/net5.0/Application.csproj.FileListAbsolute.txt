@@ -1,0 +1,16 @@
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\Application.deps.json
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\Application.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\ref\Application.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\Application.pdb
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\Database.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\Domain.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\Domain.pdb
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\bin\Debug\net5.0\Database.pdb
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\ref\Application.dll
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.pdb
