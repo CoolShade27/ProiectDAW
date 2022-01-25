@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
 import axios from 'axios';
 import { Header, Icon, List } from 'semantic-ui-react';
 
 class App extends Component {
   state = {
-    values: []
+    products: []
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/values')
+    axios.get('http://localhost:5000/api/products')
       .then((response) => {
         this.setState({
-          values: response.data
+          products: response.data
         })
       })
   }
@@ -28,8 +27,8 @@ class App extends Component {
           </Header.Subheader>
         </Header>
         <List>
-          {this.state.values.map((value: any) => (
-            <List.Item key={value.id}>{value.name}</List.Item>
+          {this.state.products.map((product: any) => (
+            <List.Item key={product.id}>{product.name}</List.Item>
           ))}
         </List>
       </div>
