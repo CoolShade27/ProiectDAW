@@ -11,17 +11,18 @@ namespace Database
         }
 
         public DbSet<Value> Values { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Value>()
             .HasData(
-                new Value {Id = 1, Name = "val1"},
-                new Value {Id = 2, Name = "val2"},
-                new Value {Id = 3, Name = "val3"}
+                new Value { Id = 1, Name = "val1" },
+                new Value { Id = 2, Name = "val2" },
+                new Value { Id = 3, Name = "val3" }
             );
         }
     }
 
-    
+
 }
