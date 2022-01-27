@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 import { Item, Button, Segment, Label } from 'semantic-ui-react';
 import { IProduct } from '../../../app/models/product';
 
 interface IProps {
     products: IProduct[];
     selectProduct: (id: string) => void;
-    deleteProduct: (id: string) => void;
+    deleteProduct: (event: SyntheticEvent<HTMLButtonElement>, id: string) => void;
+    submitting: boolean;
+    target: string;
 }
 
 export const ProductList: React.FC<IProps> = ({
     products,
     selectProduct,
-    deleteProduct
+    deleteProduct,
+    submitting, 
+    target
 }) => {
     return (
         <Segment clearing>
@@ -27,12 +31,16 @@ export const ProductList: React.FC<IProps> = ({
                                 <div>{product.description}</div>
                             </Item.Description>
                             <Item.Extra>
-                                <Button onClick={() => selectProduct(product.id)}
+                                <Button
+                                    onClick={() => selectProduct(product.id)}
                                     floated='right'
                                     content='Detalii'
                                     color='blue'
                                 />
-                                <Button onClick={() => deleteProduct(product.id)}
+                                <Button
+                                    name={product.id}
+                                    loading={target === product.id && submitting}
+                                    onClick={(e) => deleteProduct(e, product.id)}
                                     floated='right'
                                     content='Sterge'
                                     color='red'

@@ -1,20 +1,22 @@
 import React, { FormEvent, useState } from 'react';
 import { Button, Form, Segment } from 'semantic-ui-react';
 import { IProduct } from '../../../app/models/product';
-import {v4 as uuid} from 'uuid';
+import { v4 as uuid } from 'uuid';
 
 interface IProps {
   setEditMode: (editMode: boolean) => void;
   product: IProduct;
   createProduct: (product: IProduct) => void;
   editProduct: (product: IProduct) => void;
+  submitting: boolean;
 }
 
 export const ProductForm: React.FC<IProps> = ({
   setEditMode,
   product: initialForm,
   createProduct,
-  editProduct
+  editProduct,
+  submitting
 }) => {
 
   const initForm = () => {
@@ -46,38 +48,39 @@ export const ProductForm: React.FC<IProps> = ({
   }
 
   const handleInput = (event: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {name, value} = event.currentTarget;
-    setProduct({...product, [name]: value});
+    const { name, value } = event.currentTarget;
+    setProduct({ ...product, [name]: value });
   }
 
   return (
     <Segment clearing>
       <Form onSubmit={handleSubmit}>
-        <Form.Input 
-        onChange={handleInput}
-        name='name'
-        placeholder='Nume' 
-        value={product.name}
+        <Form.Input
+          onChange={handleInput}
+          name='name'
+          placeholder='Nume'
+          value={product.name}
         />
-        <Form.Input 
-        onChange={handleInput}
-        name='price'
-        placeholder='Pret' 
-        value={product.price}
+        <Form.Input
+          onChange={handleInput}
+          name='price'
+          placeholder='Pret'
+          value={product.price}
         />
-        <Form.TextArea 
-        onChange={handleInput}
-        name='description'
-        rows={3} 
-        placeholder='Descriere' 
-        value={product.description}
+        <Form.TextArea
+          onChange={handleInput}
+          name='description'
+          rows={3}
+          placeholder='Descriere'
+          value={product.description}
         />
-        <Form.Input 
-        onChange={handleInput}
-        name='category'
-        placeholder='Categorie' 
-        value={product.category}/>
+        <Form.Input
+          onChange={handleInput}
+          name='category'
+          placeholder='Categorie'
+          value={product.category} />
         <Button
+          loading={submitting}
           floated='right'
           positive
           type='submit'
