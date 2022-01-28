@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment, SyntheticEvent } from 'react';
+import React, { useState, useEffect, Fragment, SyntheticEvent, useContext } from 'react';
 import { Container } from 'semantic-ui-react';
 import { IProduct } from '../models/product';
 import { Navbar } from '../../features/nav/Navbar';
@@ -7,9 +7,11 @@ import './styles.css';
 import { ProductDashboard } from '../../features/products/dashboard/ProductDashboard';
 import agent from '../api/agent';
 import { Loading } from './Loading';
+import ProductStore from '../stores/productStore';
 
 
 const App = () => {
+  const productStore = useContext(ProductStore);
   const [products, setProducts] = useState<IProduct[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<IProduct | null>(null);
   const [editMode, setEditMode] = useState(false);
