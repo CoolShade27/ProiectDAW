@@ -1,3 +1,4 @@
+import { observer } from 'mobx-react-lite';
 import React, { SyntheticEvent } from 'react';
 import { Item, Button, Segment, Label } from 'semantic-ui-react';
 import { IProduct } from '../../../app/models/product';

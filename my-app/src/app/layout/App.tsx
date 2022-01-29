@@ -2,7 +2,6 @@ import React, { useState, useEffect, Fragment, SyntheticEvent, useContext } from
 import { Container } from 'semantic-ui-react';
 import { IProduct } from '../models/product';
 import { Navbar } from '../../features/nav/Navbar';
-import 'primereact/resources/primereact.min.css';
 import './styles.css';
 import { ProductDashboard } from '../../features/products/dashboard/ProductDashboard';
 import agent from '../api/agent';

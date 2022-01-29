@@ -1,9 +1,10 @@
+import { observer } from 'mobx-react-lite';
 import React, { SyntheticEvent } from 'react';
 import { Grid } from 'semantic-ui-react';
 import { IProduct } from '../../../app/models/product';
 import { ProductDetails } from '../details/ProductDetails';
 import { ProductForm } from '../form/ProductForm';
-import { ProductList } from './ProductList';
+import {ProductList} from './ProductList';
 
 interface IProps {
     products: IProduct[];
