@@ -15,4 +15,3 @@ D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Da
 D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Database.runtimeconfig.json
 D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\bin\Debug\net5.0\Database.runtimeconfig.dev.json
 D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.genruntimeconfig.cache
-D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Database\obj\Debug\net5.0\Database.csproj.CopyComplete

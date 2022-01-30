@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Domain;
 
@@ -36,6 +37,16 @@ namespace Database
                 };
 
                 context.Products.AddRange(products);
+                context.SaveChanges();
+            }
+
+            if (!context.Orders.Any())
+            {
+                var order = new Order
+                {
+                    Products = new Collection<Product>()
+                };
+                context.Orders.Add(order);
                 context.SaveChanges();
             }
         }

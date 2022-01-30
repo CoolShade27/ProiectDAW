@@ -9,14 +9,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application.Orders
 {
-    public class ListProducts
+    public class Details
     {
-        public class Query : IRequest<ICollection<Product>>
+        public class Query : IRequest<Order>
         {
             public Guid Id { get; set; }
         }
 
-        public class Handler : IRequestHandler<Query, ICollection<Product>>
+        public class Handler : IRequestHandler<Query, Order>
         {
             private readonly DataContext _context;
 
@@ -25,11 +25,11 @@ namespace Application.Orders
                 _context = context;
             }
 
-            public async Task<ICollection<Product>> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<Order> Handle(Query request, CancellationToken cancellationToken)
             {
                 var order = await _context.Orders.FindAsync(request.Id);
 
-                return order.Products;
+                return order;
             }
         }
     }
