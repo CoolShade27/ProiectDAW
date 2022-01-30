@@ -49,6 +49,19 @@ namespace Database
                 context.Orders.Add(order);
                 context.SaveChanges();
             }
+
+            if (!context.Addresses.Any())
+            {
+                var address = new Address
+                {
+                    Country = "Romania",
+                    City = "Bucharest",
+                    Street = "Magheru",
+                    Number = 110
+                };
+                context.Addresses.Add(address);
+                context.SaveChanges();
+            }
         }
     }
 }
