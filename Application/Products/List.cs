@@ -10,7 +10,7 @@ namespace Application.Products
 {
     public class List
     {
-        public class Query : IRequest<List<Product>> {}
+        public class Query : IRequest<List<Product>> { }
 
         public class Handler : IRequestHandler<Query, List<Product>>
         {
