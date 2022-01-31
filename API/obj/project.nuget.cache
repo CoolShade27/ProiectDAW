@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tIdijpsUwct/mDmeG2swxjk0zdCha8uFbJ8jEwX37EYQb4XE7/TUu3Jtj5gpQaPARRsf4MW+mfMZg36k6jXLmQ==",
+  "dgSpecHash": "cBWIZ22hGHO7PfXqBoXEZhbSu/ZVNuM/o6ZXjSCj4ybiW0pR6/jTJ6U0+hfir7nbbXjDWbRZ6Uk3wlgke6Y8ig==",
   "success": true,
   "projectFilePath": "D:\\Facultate\\Anul 4\\Semestrul 1\\DAW\\proiect\\Project\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Andrei\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
