@@ -21,6 +21,7 @@ namespace API.Controllers.User_Controllers
             _userService = userService;
             _context = context;
         }
+        
         [Authorize(Role.Admin)]
         [HttpGet]
         public IActionResult JoinAddresses()
