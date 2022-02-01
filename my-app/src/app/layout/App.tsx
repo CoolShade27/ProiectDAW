@@ -7,6 +7,11 @@ import { ProductDashboard } from '../../features/products/dashboard/ProductDashb
 import agent from '../api/agent';
 import { Loading } from './Loading';
 import ProductStore from '../stores/productStore';
+import { Contact } from './pages/Contact';
+import { Home } from './pages/Home';
+import { AdaugareProdus } from './pages/AdaugareProdus';
+import { Produse } from './pages/Produse';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 
 const App = () => {
@@ -85,6 +90,31 @@ const App = () => {
           target={target}
         />
       </Container>
+
+      {/*
+      <Routes>
+        <Route path="/home">
+          <Fragment>
+            <Home />
+          </Fragment>
+        </Route>
+        <Route path="/contact">
+          <Fragment>
+            <Contact />
+          </Fragment>
+        </Route>
+        <Route path="/produse">
+          <Fragment>
+            <Produse />
+          </Fragment>
+        </Route>
+        <Route path="/adaugare_produs">
+          <Fragment>
+            <AdaugareProdus />
+          </Fragment>
+        </Route>
+      </Routes> 
+      */}
     </Fragment>
   );
 }
