@@ -62,6 +62,19 @@ namespace Database
                 context.Addresses.Add(address);
                 context.SaveChanges();
             }
+
+            if(!context.Users.Any())
+            {
+                var admin = new User
+                {
+                    Id = 1,
+                    FullName = "Admin",
+                    Username = "admin",
+                    Role = Role.Admin
+                };
+                context.Users.Add(admin);
+                context.SaveChanges();
+            }
         }
     }
 }
