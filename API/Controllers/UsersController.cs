@@ -1,8 +1,11 @@
+using System.Linq;
 using API.Authorization;
 using API.Models;
 using API.Services;
+using Database;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -12,10 +15,12 @@ namespace API.Controllers
     public class UsersController : ControllerBase
     {
         private IUserService _userService;
+        private DataContext _context;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, DataContext context)
         {
             _userService = userService;
+            _context = context;
         }
 
         [AllowAnonymous]
@@ -34,6 +39,7 @@ namespace API.Controllers
             return Ok(users);
         }
 
+        [Authorize(Role.Admin)]
         [HttpGet("{id:int}")]
         public IActionResult GetById(int id)
         {

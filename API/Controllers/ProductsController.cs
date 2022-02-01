@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Application.Products;
 using Domain;
+using Database;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace API.Controllers
 {
@@ -13,10 +15,12 @@ namespace API.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly DataContext _context;
 
-        public ProductsController(IMediator mediator)
+        public ProductsController(IMediator mediator, DataContext context)
         {
             _mediator = mediator;
+            _context = context;
         }
 
         [HttpGet]
@@ -29,6 +33,16 @@ namespace API.Controllers
         {
             return await _mediator.Send(new Details.Query{Id = id});
         }
+
+        /**
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id)
+        {
+            var product =  (Product)_context.Products.Where(product => product.Id == id);
+
+            return Ok(product);
+        }
+        **/
 
         [HttpPost]
         public async Task<ActionResult<Unit>> Create(Create.Command command) 
