@@ -14,3 +14,4 @@ D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0
 D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.dll
 D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\ref\Application.dll
 D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.pdb
+D:\Facultate\Anul 4\Semestrul 1\DAW\proiect\Project\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
